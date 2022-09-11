@@ -7,7 +7,7 @@ api = Api()
 
 tasks = {
     1: {"title": "Buy groceries", "description": "Milk, Cheese, Cola, Fruit"},
-    2: {"title": "Learn Python", "description": "create Resp API"}
+    2: {"title": "Learn Python", "description": "create Rest API"}
 }
 
 parser = reqparse.RequestParser()
