@@ -11,7 +11,7 @@ tasks = {
 }
 
 parser = reqparse.RequestParser()
-parser.add_argument("title", location='form')
+parser.add_argument("title","description", location='form')
 
 class Main(Resource):
     def get(self,task_id):
