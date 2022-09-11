@@ -6,12 +6,12 @@ app = Flask(__name__)
 api = Api()
 
 tasks = {
-    1: {"title": "Buy groceries", "description": "Milk, Cheese, Cola, Fruit"},
-    2: {"title": "Learn Python", "description": "create Rest API"}
+    1: {"title": "Buy groceries"},
+    2: {"title": "Learn Python"}
 }
 
 parser = reqparse.RequestParser()
-parser.add_argument("title","description", location='form')
+parser.add_argument("title", location='form')
 
 class Main(Resource):
     def get(self,task_id):
